@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="pendaftaran.css">
+    <title>Document</title>
+</head>
+<body>
+    <div class = "fContainer">
+        <nav class = "wrapper">
+            <div class = "judul">
+                <div class = "firstname">daftar</div>
+                <div class = "lastname">now</div>
+            </div>
+            <ul class="navigation">
+                <li><a href="/web.html">Home</a></li>
+                <li><a href="/pendaftaran.html">pendaftaran</a></li>
+                <li><a href="/contakperson.html">kontak person</a></li>
+            </ul>
+        </nav>
+       </div>
+    </body>
+    <div class="firstbody">
+        <h1>Formulir Pendaftaran</h1>
+    <p>Silakan isi formulir pendaftaran di bawah ini dengan lengkap:</p>
+
+    <form action="proses_pendaftaran.php" method="POST" enctype="multipart/form-data">
+        <label for="nama">Nama:</label>
+        <input type="text" id="nama" name="nama" required><br><br>
+
+        <label for="nim">NIM:</label>
+        <input type="text" id="nim" name="nim" required><br><br>
+
+        <label for="organisasi">Pengalaman Organisasi:</label>
+        <textarea id="organisasi" name="organisasi" required></textarea><br><br>
+
+        <label for="screenshot">Screenshot IG (Instagram):</label>
+        <input type="file" id="screenshot" name="screenshot" accept="image/*" required><br><br>
+
+        <input type="submit" value="Daftar">
+    </form>
+    </div>
+</html>
